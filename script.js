@@ -1,15 +1,14 @@
 let gridChoice = 16;
 let gridSize = gridChoice*gridChoice;
 const gridContainer = document.querySelector(".grid-container");
-const testText = document.querySelector("p");
 let counter = 0;
 
+//Fill grid with divs
 while (counter < gridSize) {
     counter++;
     const gridDiv = document.createElement("div");
     gridContainer.appendChild(gridDiv);
 }
+const gridItems = gridContainer.querySelectorAll("div.grid-container div");
+gridItems.forEach(item => item.style.backgroundColor="#2d5986");
 
-testText.addEventListener("mouseover", function(event){
-    event.target.style.backgroundColor = "orange";
-});

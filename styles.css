@@ -2,10 +2,15 @@ body {
     background-color: #808080;
 }
 
+/*Needs to maintain overall grid size with a variable amount of rows/columns */
 .grid-container {
     display: grid;
     grid-template-columns: repeat(16, 50px);
     grid-template-rows: repeat(16, 50px);
+}
+
+.draw-color {
+    background-color: #2d5986;
 }
 
 .test-color {
