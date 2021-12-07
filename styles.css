@@ -1,19 +1,20 @@
+:root {
+    --grid-size: 16;
+    --draw-color: #2d5986;
+}
+
 body {
     background-color: #808080;
 }
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(16, auto);
-    grid-template-rows: repeat(16, auto);
+    grid-template-columns: repeat(var(--grid-size), auto);
+    grid-template-rows: repeat(var(--grid-size), auto);
     height: 600px;
     width: 600px;
 }
 
 .draw-color {
-    background-color: #2d5986;
-}
-
-.test-color {
-    background-color: #fff;
+    background-color: var(--draw-color);
 }
